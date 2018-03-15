@@ -6,11 +6,13 @@ Edhar Zapeka
 
 ## Tasks
 
-Welcome
-Schedule
-Students - Edhar
-Staff - Armaan
-Eresourses - Edhar
-Program overview - Armaan
-Individual - Edhar
-Contact - Armaan
+Page  | Assigned to
+------------- | -------------
+Welcome  | 
+Schedule  | 
+Students  | Edhar
+Staff  | Armaan
+Eresourses  | Edhar
+Program overview  | Armaan
+Individual  | Edhar
+Contact  | Armaan
