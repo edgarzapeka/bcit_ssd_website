@@ -10,10 +10,10 @@ Page  | Assigned to | Status
 ------|------- | -------------
 Welcome  | 
 Schedule  | 
-Students  | Edhar | In-Progress
-Staff  | Armaan
-Eresourses  | Edhar
+Students  | Edhar | Complete
+Staff  | Edhar | In-Progress
+Eresourses  | Armaan | Complete
 Program overview  | Armaan | Complete
-Individual  | Edhar
+Individual(Courses)  | Edhar | In-Progress
 Contact  | Armaan | Complete
 
