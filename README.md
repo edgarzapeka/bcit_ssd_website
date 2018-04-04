@@ -6,13 +6,14 @@
 
 ## Tasks
 
-Page  | Assigned to
+Page  | Assigned to | Status
 ------------- | -------------
 Welcome  | 
 Schedule  | 
-Students  | Edhar
+Students  | Edhar | In-Progress
 Staff  | Armaan
 Eresourses  | Edhar
-Program overview  | Armaan
+Program overview  | Armaan | Complete
 Individual  | Edhar
-Contact  | Armaan
+Contact  | Armaan | Complete
+
