@@ -1,0 +1,48 @@
+.awatar-image{
+    border: 2px solid transparent;
+    border-radius: 80px;
+    height: rem(120);
+    width: rem(140);
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+a:link {
+    text-decoration: none;
+}
+
+.students-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.user-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: rem(15);
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-info p{
+    text-align: center;
+}
+
+.user-info img{
+    display: flex;
+    align-self: center;
+}
