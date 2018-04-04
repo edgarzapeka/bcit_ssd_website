@@ -63,7 +63,8 @@ a:link {
 
 .students-content {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .user-info {
   display: flex;
