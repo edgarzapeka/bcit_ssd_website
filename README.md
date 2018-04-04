@@ -1,8 +1,8 @@
 # BCIT SSD Web Site
 
 ## Collaborators
-*Armaan Dhanji
-*Edhar Zapeka
+* Armaan Dhanji
+* Edhar Zapeka
 
 ## Tasks
 
