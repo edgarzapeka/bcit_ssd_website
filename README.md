@@ -7,7 +7,7 @@
 ## Tasks
 
 Page  | Assigned to | Status
-------------- | -------------
+------|------- | -------------
 Welcome  | 
 Schedule  | 
 Students  | Edhar | In-Progress
