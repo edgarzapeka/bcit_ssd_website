@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Calendar</title>
+  <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,900" />
+
+<style>
+html, body { height: 100vh; }
+body { min-width: 500px; }
+body > article { box-sizing: border-box; padding: 10vmin; height: 100vh; }
+
+#calendar { box-sizing: border-box; width: 100%; height: 100%; display: flex; flex-direction: column; }
+#calendar > header { flex-grow: 7; display: flex; align-items: center; justify-content: center; }
+#calendar .day-names { flex-grow: 5; display: flex; align-items: center; }
+#calendar .day-names p { flex-grow: 1; text-align: center; }
+#calendar .days { flex-grow: 88; display: flex; flex-direction: row; flex-wrap: wrap; }
+#calendar .days > div { width: calc(100% * 1/7); }
+
+/* Appearance */
+#calendar { font-family: 'Source Sans Pro', Arial, sans-serif; font-weight: 900; text-transform: uppercase; border: 1px solid #D5D5D5; }
+#calendar > header { background: #FCFCFC; }
+#calendar > header h1 { font-size: 2em; color: #333; }
+#calendar .day-names { background: #D5D5D5; }
+#calendar .day-names, #calendar .days { font-size: 0.825em; color: #666; }
+#calendar .spacer  { background: #F5F5F5; }
+#calendar .days > div { box-sizing: border-box; border: 1px solid #F5F5F5; border-width: 1px 0 0 1px; }
+#calendar .days > div:nth-child(-n+7) { border-top-width: 0; }
+#calendar .days > div:nth-child(7n+1) { border-left-width: 0; }
+#calendar .days > div:nth-child(7n+6), #calendar .days > div:nth-child(7n+7) { background: #FEFEFE; }
+#calendar .day-number { float: right; padding: 1em; }
+
+/* Menu */
+#links { position: fixed; top: 0; left: 0; }
+#links a { display: block; float: left; margin: 1em 0 0 1em; padding: 1em; font-family: 'Source Sans Pro', sans-serif; font-weight: 600; line-height: 1em; text-decoration: none; color: #3D75C8; background: #F5F5F5; }
+#links a:hover { color: #FFF; background: #3D75C8; }
+</style>
+
+</head>
+<body>
+
+<nav id="links">
+  <a href="http://antoniak.in/blog/2017/04/05/flexbox-model-css-make-calendar/">&laquo; Back to the article</a>
+  <a href="./">&bull; See all demos</a>
+</nav>
+
+<article>
+    <div id="calendar">
+    <header>
+        <h1>Month YYYY</h1>
+    </header>
+    <div class="day-names">
+        <p>Monday</p>
+        <p>Tuesday</p>
+        <p>Wednesday</p>
+        <p>Thursday</p>
+        <p>Friday</p>
+        <p>Saturday</p>
+        <p>Sunday</p>
+    </div>
+    <div class="days">
+    </div>
+    </div>
+</article>
+
+<script>
+function getMonthName(month) {
+    return ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][month];
+}
+
+function daysInMonth(year, month) {
+    month++;
+    var isLeap = ( (!(year % 4)) && ( (year % 100) || (!(year % 400)) ) );
+
+    if (month == 2)
+        return (isLeap) ? 29 : 28;
+    return 30 + (month % 2);
+}
+
+function renderCalendar(date) {
+    date = new Date(date.getFullYear(), date.getMonth(), 1);
+    
+    document.querySelector('#calendar h1').innerText = getMonthName(date.getMonth()) + ' ' + date.getFullYear();
+
+    // Spacers
+    for (i = 0; i < date.getDay()-1; i++) {
+        document.querySelector('#calendar .days').innerHTML += '<div class="spacer pre"></div>';
+    }
+
+    // Days
+    for (i = 0; i < daysInMonth(date.getFullYear(), date.getMonth()); i++) {
+        document.querySelector('#calendar .days').innerHTML += '<div class="day"><span class="day-number">' + (i+1) + '</span></div>';
+    }
+
+    // Spacers
+    var endSpacers = (7 - (date.getDay() - 1 + daysInMonth(date.getFullYear(), date.getMonth())) % 7) % 7;
+    for (i = 0; i < endSpacers; i++) {
+        document.querySelector('#calendar .days').innerHTML += '<div class="spacer post"></div>';
+    }
+}
+
+renderCalendar(new Date());
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91462617-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
