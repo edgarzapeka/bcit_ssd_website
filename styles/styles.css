@@ -41,4 +41,45 @@ table {
   overflow: hidden;
   padding: rem(30); }
 
+.awatar-image {
+  border: 2px solid transparent;
+  border-radius: 80px;
+  height: 7.5rem;
+  width: 8.75rem; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none; }
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7; }
+
+a:link {
+  text-decoration: none; }
+
+.students-content {
+  display: flex;
+  flex-wrap: wrap; }
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.9375rem; }
+
+.social-links {
+  display: flex;
+  justify-content: space-around; }
+
+.user-info p {
+  text-align: center; }
+
+.user-info img {
+  display: flex;
+  align-self: center; }
+
 /*# sourceMappingURL=styles.css.map */
