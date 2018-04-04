@@ -5,112 +5,1392 @@
   <title>Calendar</title>
   <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,900" />
-
-<style>
-html, body { height: 100vh; }
-body { min-width: 500px; }
-body > article { box-sizing: border-box; padding: 10vmin; height: 100vh; }
-
-#calendar { box-sizing: border-box; width: 100%; height: 100%; display: flex; flex-direction: column; }
-#calendar > header { flex-grow: 7; display: flex; align-items: center; justify-content: center; }
-#calendar .day-names { flex-grow: 5; display: flex; align-items: center; }
-#calendar .day-names p { flex-grow: 1; text-align: center; }
-#calendar .days { flex-grow: 88; display: flex; flex-direction: row; flex-wrap: wrap; }
-#calendar .days > div { width: calc(100% * 1/7); }
-
-/* Appearance */
-#calendar { font-family: 'Source Sans Pro', Arial, sans-serif; font-weight: 900; text-transform: uppercase; border: 1px solid #D5D5D5; }
-#calendar > header { background: #FCFCFC; }
-#calendar > header h1 { font-size: 2em; color: #333; }
-#calendar .day-names { background: #D5D5D5; }
-#calendar .day-names, #calendar .days { font-size: 0.825em; color: #666; }
-#calendar .spacer  { background: #F5F5F5; }
-#calendar .days > div { box-sizing: border-box; border: 1px solid #F5F5F5; border-width: 1px 0 0 1px; }
-#calendar .days > div:nth-child(-n+7) { border-top-width: 0; }
-#calendar .days > div:nth-child(7n+1) { border-left-width: 0; }
-#calendar .days > div:nth-child(7n+6), #calendar .days > div:nth-child(7n+7) { background: #FEFEFE; }
-#calendar .day-number { float: right; padding: 1em; }
-
-/* Menu */
-#links { position: fixed; top: 0; left: 0; }
-#links a { display: block; float: left; margin: 1em 0 0 1em; padding: 1em; font-family: 'Source Sans Pro', sans-serif; font-weight: 600; line-height: 1em; text-decoration: none; color: #3D75C8; background: #F5F5F5; }
-#links a:hover { color: #FFF; background: #3D75C8; }
-</style>
-
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
+    <hr>
+    <h1>September</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thurs</div>
+            </div>
+                <div class="week">
+                  <div class="day">1</div>
+                  <div class="day">2</div>
+                  <div class="day">3</div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">6</div>
+                  <div class="day">7</div>
+                </div>  
+                <div class="week">
+                  <div class="day">8</div>
+                  <div class="day">9</div>
+                  <div class="day">10</div>
+                  <div class="day">
+                        <div class="content">
+                                11
+                                <div class="block">
+                                  Orientation/Study Skills
+                                </div>
+                                <div class="block">
+                                  Pat McGee / Marlene Delanghe
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                12
+                                <div class="block">
+                                    Team Building / Prof Communication
+                                </div>
+                                <div class="block">
+                                  Marlene Delanghe
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                13
+                                <div class="block">
+                                    OO Programming in C# (Part 1)
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                14
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        15
+                                        <div class="block">
+                                            Relational Databases
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                  <div class="day">16</div>
+                  <div class="day">17</div>
+                  <div class="day">
+                        <div class="content">
+                                18
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                19
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                20
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                21
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        22
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                  <div class="day">23</div>
+                  <div class="day">24</div>
+                  <div class="day">
+                        <div class="content">
+                                25
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                26
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                27
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                28
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        29
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        30
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
+              <h1>October</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thurs</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+            </div>
+                <div class="week">
+                  <div class="day">1</div>
+                  <div class="day">
+                        <div class="content">
+                                2
+                                <div class="block">
+                                  Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                3
+                                <div class="block">
+                                    Sys Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                4
+                                <div class="block">
+                                    Javascript P1
+                                </div>
+                                <div class="block">
+                                  Jason Harrison
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                5
+                                <div class="block">
+                                    Relational Databases
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                6
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+          <div class="day">7</div>
+                </div>
+                <div class="week">
+                       
+                </div>  
+                <div class="week">
+                  <div class="day">8</div>
+                  <div class="day">
+                        <div class="content">
+                                9
+                                <div class="block">
+                                    Thanksgiving Day
+                                </div>
+                                <div class="block">
+                                  Holiday
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                10
+                                <div class="block">
+                                    Presentation Skills
+                                </div>
+                                <div class="block">
+                                  Marlene
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                11
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                12
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                13
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">14</div>
+                </div>
+                <div class="week">
+                  <div class="day">15</div>
+                  <div class="day">
+                        <div class="content">
+                                16
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                17
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                18
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                19
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                20
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">21</div>
+                </div>
+                <div class="week">
+                  <div class="day">22</div>
+                  <div class="day">
+                        <div class="content">
+                                23
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                24
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                25
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                26
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                27
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">28</div>
+                </div>
+                <div class="week">
+                  <div class="day">29</div>
+                  <div class="day">
+                        <div class="content">
+                                30
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                    <div class="content">
+                      31
+                      <div class="block">
+                        Meeting with advisor 11:00
+                      </div>
+                      <div class="block">
+                        Meeting with advisor 12:00
+                      </div>
+                      <div class="block">
+                        Available 08:00-12:30
+                      </div>
+                      <div class="block">
+                        Available 14:20-16:30
+                      </div>
+                    </div>
+                  </div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
+              <h1>November</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Wed</div>
+                    <div class="day">Thurs</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+            </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        1
+                                        <div class="block">
+                                            Front End
+                                        </div>
+                                        <div class="block">
+                                          Michael Whyte
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        2
+                                        <div class="block">
+                                            Front End
+                                        </div>
+                                        <div class="block">
+                                          Michael Whyte
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        3
+                                        <div class="block">
+                                            Front End
+                                        </div>
+                                        <div class="block">
+                                          Michael Whyte
+                                        </div>
+                                      </div>
+                          </div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">
+                        <div class="content">
+                                6
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                7
+                                <div class="block">
+                                    Front End
+                                </div>
+                                <div class="block">
+                                  Michael Whyte
+                                </div>
+                              </div>
+                  </div>
+                </div>  
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        8
+                                        <div class="block">
+                                            Front End
+                                        </div>
+                                        <div class="block">
+                                          Michael Whyte
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        9
+                                        <div class="block">
+                                            Front End
+                                        </div>
+                                        <div class="block">
+                                          Michael Whyte
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        10
+                                        <div class="block">
+                                            Front End
+                                        </div>
+                                        <div class="block">
+                                          Michael Whyte
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">11</div>
+                          <div class="day">12</div>
+                  <div class="day">
+                        <div class="content">
+                                13
+                                <div class="block">
+                                    Rememberance Day
+                                </div>
+                                <div class="block">
+                                  BCIT Closed
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                14
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        15
+                                        <div class="block">
+                                            Relational Databases
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        16
+                                        <div class="block">
+                                            Relational Databases
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                  <div class="day">
+                        <div class="content">
+                                17
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">18</div>
+                  <div class="day">19</div>
+                  <div class="day">
+                        <div class="content">
+                                20
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                21
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        22
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                        <div class="day">
+                                <div class="content">
+                                        23
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        24
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">25</div>
+                          <div class="day">26</div>
+                          <div class="day">
+                                <div class="content">
+                                        27
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        28
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+             
+              
+             
+             
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        29
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        30
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
+              <h1>December</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thurs</div>
+            </div>
+                <div class="week">
+                  <div class="day">1</div>
+                  <div class="day">2</div>
+                  <div class="day">3</div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">6</div>
+                  <div class="day">7</div>
+                </div>  
+                <div class="week">
+                  <div class="day">8</div>
+                  <div class="day">9</div>
+                  <div class="day">10</div>
+                  <div class="day">11</div>
+                  <div class="day">12</div>
+                  <div class="day">13</div>
+                  <div class="day">14</div>
+                </div>
+                <div class="week">
+                  <div class="day">15</div>
+                  <div class="day">16</div>
+                  <div class="day">17</div>
+                  <div class="day">18</div>
+                  <div class="day">19</div>
+                  <div class="day">20</div>
+                  <div class="day">21</div>
+                </div>
+                <div class="week">
+                  <div class="day">22</div>
+                  <div class="day">23</div>
+                  <div class="day">24</div>
+                  <div class="day">25</div>
+                  <div class="day">26</div>
+                  <div class="day">27</div>
+                  <div class="day">28</div>
+                </div>
+                <div class="week">
+                  <div class="day">29</div>
+                  <div class="day">30</div>
+                  <div class="day">
+                    <div class="content">
+                      31
+                      <div class="block">
+                        Meeting with advisor 11:00
+                      </div>
+                      <div class="block">
+                        Meeting with advisor 12:00
+                      </div>
+                      <div class="block">
+                        Available 08:00-12:30
+                      </div>
+                      <div class="block">
+                        Available 14:20-16:30
+                      </div>
+                    </div>
+                  </div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
+              <h1>January</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thurs</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+            </div>
+                <div class="week">
+                  <div class="day">1</div>
+                  <div class="day">2</div>
+                  <div class="day">3</div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">6</div>
+                  <div class="day">7</div>
+                </div>  
+                <div class="week">
+                  <div class="day">8</div>
+                  <div class="day">9</div>
+                  <div class="day">10</div>
+                  <div class="day">11</div>
+                  <div class="day">12</div>
+                  <div class="day">13</div>
+                  <div class="day">14</div>
+                </div>
+                <div class="week">
+                  <div class="day">15</div>
+                  <div class="day">16</div>
+                  <div class="day">17</div>
+                  <div class="day">18</div>
+                  <div class="day">19</div>
+                  <div class="day">20</div>
+                  <div class="day">21</div>
+                </div>
+                <div class="week">
+                  <div class="day">22</div>
+                  <div class="day">23</div>
+                  <div class="day">24</div>
+                  <div class="day">25</div>
+                  <div class="day">26</div>
+                  <div class="day">27</div>
+                  <div class="day">28</div>
+                </div>
+                <div class="week">
+                  <div class="day">29</div>
+                  <div class="day">30</div>
+                  <div class="day">
+                    <div class="content">
+                      31
+                      <div class="block">
+                        Meeting with advisor 11:00
+                      </div>
+                      <div class="block">
+                        Meeting with advisor 12:00
+                      </div>
+                      <div class="block">
+                        Available 08:00-12:30
+                      </div>
+                      <div class="block">
+                        Available 14:20-16:30
+                      </div>
+                    </div>
+                  </div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
+              <h1>Febuary</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Thurs</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+            </div>
+                <div class="week">
+                  <div class="day">1</div>
+                  <div class="day">2</div>
+                  <div class="day">3</div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">6</div>
+                  <div class="day">7</div>
+                </div>  
+                <div class="week">
+                  <div class="day">8</div>
+                  <div class="day">9</div>
+                  <div class="day">10</div>
+                  <div class="day">11</div>
+                  <div class="day">12</div>
+                  <div class="day">13</div>
+                  <div class="day">14</div>
+                </div>
+                <div class="week">
+                  <div class="day">15</div>
+                  <div class="day">16</div>
+                  <div class="day">17</div>
+                  <div class="day">18</div>
+                  <div class="day">19</div>
+                  <div class="day">20</div>
+                  <div class="day">21</div>
+                </div>
+                <div class="week">
+                  <div class="day">22</div>
+                  <div class="day">23</div>
+                  <div class="day">24</div>
+                  <div class="day">25</div>
+                  <div class="day">26</div>
+                  <div class="day">27</div>
+                  <div class="day">28</div>
+                </div>
+                <div class="week">
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
+              <h1>March</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Thurs</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+            </div>
+                <div class="week">
+                  <div class="day">1</div>
+                  <div class="day">2</div>
+                  <div class="day">3</div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">6</div>
+                  <div class="day">7</div>
+                </div>  
+                <div class="week">
+                  <div class="day">8</div>
+                  <div class="day">9</div>
+                  <div class="day">10</div>
+                  <div class="day">11</div>
+                  <div class="day">12</div>
+                  <div class="day">13</div>
+                  <div class="day">14</div>
+                </div>
+                <div class="week">
+                  <div class="day">15</div>
+                  <div class="day">16</div>
+                  <div class="day">17</div>
+                  <div class="day">18</div>
+                  <div class="day">19</div>
+                  <div class="day">20</div>
+                  <div class="day">21</div>
+                </div>
+                <div class="week">
+                  <div class="day">22</div>
+                  <div class="day">23</div>
+                  <div class="day">24</div>
+                  <div class="day">25</div>
+                  <div class="day">26</div>
+                  <div class="day">27</div>
+                  <div class="day">28</div>
+                </div>
+                <div class="week">
+                  <div class="day">29</div>
+                  <div class="day">30</div>
+                  <div class="day">
+                    <div class="content">
+                      31
+                      <div class="block">
+                        Meeting with advisor 11:00
+                      </div>
+                      <div class="block">
+                        Meeting with advisor 12:00
+                      </div>
+                      <div class="block">
+                        Available 08:00-12:30
+                      </div>
+                      <div class="block">
+                        Available 14:20-16:30
+                      </div>
+                    </div>
+                  </div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
+              <h1>April</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thurs</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+            </div>
+                <div class="week">
+                  <div class="day">1</div>
+                  <div class="day">2</div>
+                  <div class="day">3</div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">6</div>
+                  <div class="day">7</div>
+                </div>  
+                <div class="week">
+                  <div class="day">8</div>
+                  <div class="day">9</div>
+                  <div class="day">10</div>
+                  <div class="day">
+                        <div class="content">
+                                11
+                                <div class="block">
+                                  Orientation/Study Skills
+                                </div>
+                                <div class="block">
+                                  Pat McGee / Marlene Delanghe
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                12
+                                <div class="block">
+                                    Team Building / Prof Communication
+                                </div>
+                                <div class="block">
+                                  Marlene Delanghe
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                13
+                                <div class="block">
+                                    OO Programming in C# (Part 1)
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                14
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        15
+                                        <div class="block">
+                                            Relational Databases
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                  <div class="day">16</div>
+                  <div class="day">17</div>
+                  <div class="day">
+                        <div class="content">
+                                18
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                19
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                20
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                21
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        22
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                  <div class="day">23</div>
+                  <div class="day">24</div>
+                  <div class="day">
+                        <div class="content">
+                                25
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                26
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                27
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                  <div class="day">
+                        <div class="content">
+                                28
+                                <div class="block">
+                                    Systems Analysis and Design
+                                </div>
+                                <div class="block">
+                                  Pat McGee
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="week">
+                        <div class="day">
+                                <div class="content">
+                                        29
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day">
+                                <div class="content">
+                                        30
+                                        <div class="block">
+                                            Systems Analysis and Design
+                                        </div>
+                                        <div class="block">
+                                          Pat McGee
+                                        </div>
+                                      </div>
+                          </div>
+                          <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
+              <h1>May</h1>
+        <div class="month">
+            <div class="week">
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thurs</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+            </div>
+                <div class="week">
+                  <div class="day">1</div>
+                  <div class="day">2</div>
+                  <div class="day">3</div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">6</div>
+                  <div class="day">7</div>
+                </div>  
+                <div class="week">
+                  <div class="day">8</div>
+                  <div class="day">9</div>
+                  <div class="day">10</div>
+                  <div class="day">11</div>
+                  <div class="day">12</div>
+                  <div class="day">13</div>
+                  <div class="day">14</div>
+                </div>
+                <div class="week">
+                  <div class="day">15</div>
+                  <div class="day">16</div>
+                  <div class="day">17</div>
+                  <div class="day">18</div>
+                  <div class="day">19</div>
+                  <div class="day">20</div>
+                  <div class="day">21</div>
+                </div>
+                <div class="week">
+                  <div class="day">22</div>
+                  <div class="day">23</div>
+                  <div class="day">24</div>
+                  <div class="day">25</div>
+                  <div class="day">26</div>
+                  <div class="day">27</div>
+                  <div class="day">28</div>
+                </div>
+                <div class="week">
+                  <div class="day">29</div>
+                  <div class="day">30</div>
+                  <div class="day">
+                    <div class="content">
+                      31
+                      <div class="block">
+                        Meeting with advisor 11:00
+                      </div>
+                      <div class="block">
+                        Meeting with advisor 12:00
+                      </div>
+                      <div class="block">
+                        Available 08:00-12:30
+                      </div>
+                      <div class="block">
+                        Available 14:20-16:30
+                      </div>
+                    </div>
+                  </div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                </div>
+              </div>
+              <hr>
 
-<nav id="links">
-  <a href="http://antoniak.in/blog/2017/04/05/flexbox-model-css-make-calendar/">&laquo; Back to the article</a>
-  <a href="./">&bull; See all demos</a>
-</nav>
-
-<article>
-    <div id="calendar">
-    <header>
-        <h1>Month YYYY</h1>
-    </header>
-    <div class="day-names">
-        <p>Monday</p>
-        <p>Tuesday</p>
-        <p>Wednesday</p>
-        <p>Thursday</p>
-        <p>Friday</p>
-        <p>Saturday</p>
-        <p>Sunday</p>
-    </div>
-    <div class="days">
-    </div>
-    </div>
-</article>
 
 <script>
-function getMonthName(month) {
-    return ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][month];
-}
 
-function daysInMonth(year, month) {
-    month++;
-    var isLeap = ( (!(year % 4)) && ( (year % 100) || (!(year % 400)) ) );
-
-    if (month == 2)
-        return (isLeap) ? 29 : 28;
-    return 30 + (month % 2);
-}
-
-function renderCalendar(date) {
-    date = new Date(date.getFullYear(), date.getMonth(), 1);
-    
-    document.querySelector('#calendar h1').innerText = getMonthName(date.getMonth()) + ' ' + date.getFullYear();
-
-    // Spacers
-    for (i = 0; i < date.getDay()-1; i++) {
-        document.querySelector('#calendar .days').innerHTML += '<div class="spacer pre"></div>';
-    }
-
-    // Days
-    for (i = 0; i < daysInMonth(date.getFullYear(), date.getMonth()); i++) {
-        document.querySelector('#calendar .days').innerHTML += '<div class="day"><span class="day-number">' + (i+1) + '</span></div>';
-    }
-
-    // Spacers
-    var endSpacers = (7 - (date.getDay() - 1 + daysInMonth(date.getFullYear(), date.getMonth())) % 7) % 7;
-    for (i = 0; i < endSpacers; i++) {
-        document.querySelector('#calendar .days').innerHTML += '<div class="spacer post"></div>';
-    }
-}
-
-renderCalendar(new Date());
-</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-91462617-1', 'auto');
-  ga('send', 'pageview');
-</script>
+        var content = "";
+        const PAT = "Pat McGee";
+        const MARLENE = "Marlene Delanghe";
+        const MICHAEL = "Michael Whyte";
+        const MEDHAT = "Medhat Elmasry";
+        var studySkills = "Orientation / Study Skills\n" + PAT;
+        var teamBuilding = "Team Building / Prof Communication\n" + MARLENE;
+        var interview = "Interview Skills\n" + MARLENE;
+        var mock_interview = "Mock Interviews\n"+ MARLENE;
+        var oop1 = "OO Programming in C# (Part 1)\n" + PAT;
+        var saad = "Systems Analysis and Design\n" + PAT;
+        var relational = "Relational Databases\n" + PAT;
+        var proj1_3 = "Project 1 - Phase 3\n" + PAT;
+        var fewd = "Front End Web Design\n" + MICHAEL;
+        var ios = "iOS Development\n" + PAT;
+        var mean = "MEAN (Mongo, ExpressJS, Angular, Node)\n" + MEDHAT;
+        var industry_proj = "Industry Project\n" + PAT;
+        var blank = "";
+    </script>
+        
 </body>
 </html>
