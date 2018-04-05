@@ -1,0 +1,29 @@
+
+.staff-content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.staff-content h1{
+    font-size: rem(24);
+    font-weight: bold;
+}
+.administration-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-header{
+    font-size: rem(18);
+    font-weight: bold;
+}
+
+.faculty-block{
+    display: flex;
+    flex-basis: column wrap;
+}
+
+.faculty-block h4{
+    text-align: center;
+}
