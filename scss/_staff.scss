@@ -2,28 +2,27 @@
 .staff-content{
     display: flex;
     flex-direction: column;
-
 }
 
-.staff-content h1{
-    font-size: rem(24);
-    font-weight: bold;
+.administrationBlock{
+    padding: $padding;
 }
-.administration-block{
+
+.administrationItem{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 
-.card-header{
-    font-size: rem(18);
+.facultyBlock{
+    padding: $padding;
+}
+.facultyBlock ul{
+    list-style-type: circle;
+}
+
+h1{
+    padding: rem(15);
+    font-size: rem(20);
     font-weight: bold;
-}
-
-.faculty-block{
-    display: flex;
-    flex-basis: column wrap;
-}
-
-.faculty-block h4{
-    text-align: center;
 }

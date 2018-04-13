@@ -14,6 +14,6 @@ Students  | Edhar | Complete
 Staff  | Edhar | In-Progress
 Eresourses  | Armaan | Complete
 Program overview  | Armaan | Complete
-Individual(Courses)  | Edhar | In-Progress
+Individual(Courses)  | Edhar | Complete
 Contact  | Armaan | Complete
 

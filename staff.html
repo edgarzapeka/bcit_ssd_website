@@ -4,56 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Staff</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BCIT SSD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="program_overview.html">Program Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="students.html">Students</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="staff.html">Staff</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <div class="staff-content">
-            <h1>Administration</h1>
-            <div class="administration-block">
-                    <div class="card bg-light mb-3" style="max-width: 18rem;">
-                        <div class="card-header">Rhonda Ewashko</div>
-                        <div class="card-body">
-                            <p class="card-text">Program Coordinator</p>
-                            <p>Email: Rhonda_Ewashko@bcit.ca</p>
-                            <p>Phone: 604-412-7727</p>
-                        </div>
-                    </div>
+            <div class="administrationBlock">
+                <h1>Administration</h1>
+                <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Ron Terencio</td>
+                                <td>Program Coordinator</td>
+                                <td>604.412.7622</td>
+                                <td>Ron_Terencio@bcit.ca</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Rhonda Ewashko</td>
+                                <td>Program Coordinator</td>
+                                <td>604.412.7727</td>
+                                <td>Rhonda_Ewashko@bcit.ca</td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
-            <h1>Faculty</h1>
-            <div class="faculty-block">
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Pat McGee</div>
-                    <div class="card-body">
-                        <p class="card-text">Software Systems Developer (SSD) Program</p>
-                        <p>Email: Pat_McGee@bcit.ca</p>
-                        <h4>Courses:</h4>
-                        <ul class="list-group">
-                            <li class="list-group-item">OO Programming in C#</li>
-                            <li class="list-group-item">Systems Analysis and Design</li>
-                            <li class="list-group-item">Relational Databases</li>
-                            <li class="list-group-item">Javascript Applications</li>
-                            <li class="list-group-item">ASP.NET</li>
-                            <li class="list-group-item">Web Application Security</li>
-                            <li class="list-group-item">iOS Development</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Jason Harrison</div>
-                    <div class="card-body">
-                        <p>Email: Jason_Harrison@bcit.ca</p>
-                        <h4>Courses:</h4>
-                        <ul class="list-group">
-                            <li class="list-group-item">Javascript</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="facultyBlock">
+                <h1>Faculty</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Courses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Pat McGee</td>
+                        <td>pmcgee@learn.bcit.ca</td>
+                        <td>
+                            <ul>
+                                <li>OO Programming in C#</li>
+                                <li>Systems Analysis and Design</li>
+                                <li>Relational Databases</li>
+                                <li>Javascript Applications</li>
+                                <li>ASP.NET</li>
+                                <li>iOS Development</li>
+                            </ul>
+                        </td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Michael Whyte</td>
+                        <td>Michael_Whyte@bcit.ca</td>
+                        <td>
+                            <ul>
+                                <li>Front End Web Design</li>
+                            </ul>
+                        </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Jason Harrison</td>
+                            <td>jharrison3@my.bcit.ca</td>
+                            <td>
+                                <ul>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Paul Mills</td>
+                            <td>pfmills59@hotmail.com</td>
+                            <td>
+                                <ul>
+                                    <li>Introductory Java Programming</li>
+                                    <li>Android Introduction</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jeff Parker</td>
+                            <td>Jeffrey_Parker@bcit.ca</td>
+                            <td>
+                                <ul>
+                                    <li>PHP / MySQL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Medhat Elmasry</td>
+                            <td>medhat@elmasry.ca </td>
+                            <td>
+                                <ul>
+                                    <li>MEAN (Mongo, ExpressJS, Angular, Node)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Marlene Delanghe</td>
+                            <td>mdelanghe@bcit.ca </td>
+                            <td>
+                                <ul>
+                                    <li>Study Skills</li>
+                                    <li>Team Building / Prof Communication</li>
+                                    <li>Presentation Skills</li>
+                                    <li>Resume Writing Essentials</li>
+                                    <li>Interview Skills</li>
+                                    <li>Mock Interviews</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="program_overview.html">Program Overview</a>
+            </li>
+            <li>
+                <a href="courses.html">Courses</a>
+            </li>
+            <li>
+                <a href="students.html">Students</a>
+            </li>
+            <li>
+                <a href="calendar.html">Calendar</a>
+            </li>
+            <li>
+                <a href="staff.html">Staff</a>
+            </li>
+            <li>
+                <a href="resources.html">Resources</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <h5>Developed With All The Love by</h5>
+        <h6><a href="https://github.com/edgarzapeka/">Edgar Zapeka</a> & <a href="https://github.com/armaandh">Armaan Dhanji</a></h6>
+    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

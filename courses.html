@@ -4,226 +4,292 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Courses</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="header">header</div>
-        <h1>SSD Courses:</h1>
-        <div class="program-matrix">
-                <h1>Program matrix</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">BCIT SSD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="program_overview.html">Program Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="students.html">Students</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="calendar.html">Calendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="staff.html">Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="program-matrix">
+                <h1 class="title">Program matrix</h1>
                 <div id="accordion">
-                        <div class="card">
-                          <div class="card-header" id="headingOne">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                SSDP 1501 	Systems Foundations 1
+                            </button>
+                        </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                                SSDP 1501 provides a broad introduction to the software development life cycle for the web. Common systems analysis and design models, including UML, are examined using case studies. Professional looking, device responsive and valid client-side web scripting is introduced with current and cross-browser compliant HTML. A comprehensive study in object-oriented programming fundamentals is delivered through exercises and projects using C#. Lab exercises and projects combine technical skills while also emphasising communication and presentation skills needed in a developer team setting.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                SSDP 2501 	Systems Foundations 2
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                                This course examines effective hardware and software architectures for web development while also introducing object-oriented server-side programming. Labs and projects require assembly and use of development platforms for web development. Students write advanced HTML and CSS for the client combined with Java for device responsive server-side deployment.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                SSDP 3501 	Systems Foundations 3
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                                SSDP 3501 introduces dynamic data-driven web development using both .NET and freeware platforms and tools. Industry accepted relational database design and SQL coding are practiced using Microsoft SQL Server and MySQL. Exercises and projects combine database development with scripting and code including HTML, Javascript, PHP, and C# with ASP.NET for web application development.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
                             <h5 class="mb-0">
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    SSDP 1501 	Systems Foundations 1
-                              </button>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    SSDP 4001 	Specialty Topics
+                            </button>
                             </h5>
-                          </div>
-                      
-                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                    SSDP 1501 provides a broad introduction to the software development life cycle for the web. Common systems analysis and design models, including UML, are examined using case studies. Professional looking, device responsive and valid client-side web scripting is introduced with current and cross-browser compliant HTML. A comprehensive study in object-oriented programming fundamentals is delivered through exercises and projects using C#. Lab exercises and projects combine technical skills while also emphasising communication and presentation skills needed in a developer team setting.
-                            </div>
-                          </div>
                         </div>
-                        <div class="card">
-                          <div class="card-header" id="headingTwo">
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                    Topics in this course round out knowledge gained in prior courses for building web applications that have all the standard features of typical subscriber-access or point-of-sale web solutions. At the end of this course, students are expected to be able to design and build intuitive, device responsive, safe, secure, scalable, and robust commercial applications. As well, this course emphasizes tool and platform selection for effective team development. Techniques for testing and scaling applications are examined. Development patterns using web forms and the model view controller frameworks are practiced. Course work also emphasizes interview and presentation skills for effective project stakeholder communication.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
                             <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    SSDP 2501 	Systems Foundations 2
-                              </button>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    SSDP 5001 	Projects
+                            </button>
                             </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                             <div class="card-body">
-                                    This course examines effective hardware and software architectures for web development while also introducing object-oriented server-side programming. Labs and projects require assembly and use of development platforms for web development. Students write advanced HTML and CSS for the client combined with Java for device responsive server-side deployment.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    SSDP 3501 	Systems Foundations 3
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                    SSDP 3501 introduces dynamic data-driven web development using both .NET and freeware platforms and tools. Industry accepted relational database design and SQL coding are practiced using Microsoft SQL Server and MySQL. Exercises and projects combine database development with scripting and code including HTML, Javascript, PHP, and C# with ASP.NET for web application development.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                        SSDP 4001 	Specialty Topics
-                                </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                <div class="card-body">
-                                        Topics in this course round out knowledge gained in prior courses for building web applications that have all the standard features of typical subscriber-access or point-of-sale web solutions. At the end of this course, students are expected to be able to design and build intuitive, device responsive, safe, secure, scalable, and robust commercial applications. As well, this course emphasizes tool and platform selection for effective team development. Techniques for testing and scaling applications are examined. Development patterns using web forms and the model view controller frameworks are practiced. Course work also emphasizes interview and presentation skills for effective project stakeholder communication.
-                                </div>
+                                    This course integrates all soft and technical skills covered during the program through work in two major team projects. Both projects challenge participants to research and assemble new technologies. The first project is an internal project to design and build a data-driven commercial web site. The second project involves a four-week term with an industry client to build a web site or web site component. Both projects require agile systems analysis and design, project planning and management, communication of design and progress, professional presentation, and data driven website development using current best practices.
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFive">
-                                <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                        SSDP 5001 	Projects
-                                </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                <div class="card-body">
-                                        This course integrates all soft and technical skills covered during the program through work in two major team projects. Both projects challenge participants to research and assemble new technologies. The first project is an internal project to design and build a data-driven commercial web site. The second project involves a four-week term with an industry client to build a web site or web site component. Both projects require agile systems analysis and design, project planning and management, communication of design and progress, professional presentation, and data driven website development using current best practices.
-                                </div>
-                            </div>
                         </div>
-                      </div>
-        </div>    
-        <div class="courses-content">
-            <div class="course-card-1">
-                <img src="images/courses/csharplanguage.png" />
-                <div class="course-info">
-                    <h1>OO Programming in C#</h1>
-                    <p>This course takes you, step by step, through the principles and practices of object-oriented programming (OOP). 
-                        The course provides you with the firm foundation in OOP that you need to progress to intermediate-level C# courses.</p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Pat McGee</h3>
+                    </div>
+            </div>    
+            <h1 class="title">Courses List:</h1>
+            <div class="courses-content">
+                <div class="course-card-1">
+                    <img src="images/courses/csharplanguage.png" />
+                    <div class="course-info">
+                        <h1>OO Programming in C#</h1>
+                        <p>This course takes you, step by step, through the principles and practices of object-oriented programming (OOP). 
+                            The course provides you with the firm foundation in OOP that you need to progress to intermediate-level C# courses.</p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Pat McGee</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-2">
+                    <img src="images/courses/analysys.png" />
+                    <div class="course-info">
+                        <h1>Systems Analysis and Design</h1>
+                        <p>Systems development is systematic process which includes phases such as planning, analysis, design, deployment, and maintenance.</p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Pat McGee</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-3">
+                    <img src="images/courses/databases.png" />
+                    <div class="course-info">
+                        <h1>Relational Databases</h1>
+                        <p>This intensive course provides  an introduction to relational database design concepts and industry standards. Students learn the tools and processes for data modeling in Relational Database Management Systems (RDBMS) in a Windows PC (Microsoft SQL Server) lab environment. They also focus on the Structured Query Language, SQL to define and manipulate data.  </p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Pat McGee</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-4">
+                    <img src="images/courses/frontend.png" />
+                    <div class="course-info">
+                        <h1>JavaScript </h1>
+                        <p>The JavaScript course focuses on the fundamental concepts of the JavaScript language. This course will empower you with the skills to design client-side, platform-independent solutions that greatly increase the value of your Web site by providing interactivity and interest. You will learn how to use JavaScript to communicate with users, modify the Document Object Model (DOM), control program flow, validate forms, animate images, create cookies, change HTML on the fly, and communicate with databases.</p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Jason Harrison</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-5">
+                    <img src="images/courses/java.png" />
+                    <div class="course-info">
+                        <h1>Introductory Java Programming</h1>
+                        <p>Taking this course will provide you with a basic foundation in Java syntax, which is the first step towards becoming a successful Java developer. You’ll learn how computers make decisions and how Java keeps track of information through variables and data types. You’ll learn to create conditional statements, functions, and loops to process information and solve problems. You’ll even learn to use IntelliJ, a Java IDE (Integrated Development Environment) that professional developers use, to build, compile, and debug your code. </p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Paul Mills</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-6">
+                    <img src="images/courses/angularjs.png" />
+                    <div class="course-info">
+                        <h1>Javascript Applications</h1>
+                        <p>Javascript Applications course teaches developers how to use AngularJS to facilitate development of single-page web applications that use the Model-View-Controller (MVC) design pattern. After completing our AngularJS training course you will be able to create solid web applications.</p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Pat McGee</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-7">
+                    <img src="images/courses/php_mysql.png" />
+                    <div class="course-info">
+                        <h1>PHP / MySQL</h1>
+                        <p>This PHP and MySQL course will provide you with the skills and knowledge necessary to create dynamic database-driven websites using PHP – the fastest-growing scripting language in the world, and MySQL – the world’s most popular open source database. After all, Facebook, Wikipedia and WordPress were all built on PHP and MySQL. </p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Jeff Parker</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-8">
+                    <img src="images/courses/aspnet.png" />
+                    <div class="course-info">
+                        <h1>ASP.NET</h1>
+                        <p>This is an introductory course on ASP.NET MVC Core 2.0 that will take you from basics all the way to advance mode. This course is for anyone who is new to asp.net core 2.0 or who is familiar with ASP.NET MVC and wants to take a first stab at understanding what is different in asp.net core 2.0. From there we would be building multiple projects to understand all concepts in ASP.NET MVC Core 2.0</p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Pat McGee</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-9">
+                    <img src="images/courses/android.png" />
+                    <div class="course-info">
+                        <h1>Android Introduction</h1>
+                        <p>This course provides an introduction to developing applications for the Android mobile platform. It is designed to give you a high level overview of Android as a development platform. You will learn the basics of the Android platform, and gain an understanding of the application lifecycle, write simple GUI applications, use built-in widgets and components, work with the database to store data locally. </p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Paul Mills</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-10">
+                    <img src="images/courses/security.png" />
+                    <div class="course-info">
+                        <h1>Web Application Security</h1>
+                        <p>An introductory course about understanding Web Application Security, its importance and vulnerability in the industry. Web application security involves the security of websites and web applications. The principles of application security is applied primarily to the Internet and Web systems. </p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Pat McGee</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-11">
+                    <img src="images/courses/mean.png" />
+                    <div class="course-info">
+                        <h1>MEAN (Mongo, ExpressJS, Angular, Node)</h1>
+                        <p>This advanced computer science course will provide an overview of several of the most popular web and mobile app development toolkits, including MongoDB, ExpressJS, AngularJS, and Node.js. Together, these tools are called the “MEAN stack.” In this course, we will introduce the essential concepts of the MEAN stack using a fast-paced, learn-by- doing approach.  </p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Medhat Elmasry</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-12">
+                    <img src="images/courses/ios.png" />
+                    <div class="course-info">
+                        <h1>iOS Development</h1>
+                        <p>This 12-week course will introduce you to the basics of iOS app development using Apple's new programming language Swift. During this course students have access to Apple resources for the development and testing of iOS applications. Students will design an application, write code on their own Intel based Mac and run their application on their own iOS device.</p>
+                        <div class="course-instructor-field">
+                            <h3>Instructor:&nbsp;&nbsp;</h3>
+                            <h3>Pat McGee</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="course-card-2">
-                <img src="images/courses/analysys.png" />
-                <div class="course-info">
-                    <h1>Systems Analysis and Design</h1>
-                    <p>Systems development is systematic process which includes phases such as planning, analysis, design, deployment, and maintenance.</p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Pat McGee</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-3">
-                <img src="images/courses/databases.png" />
-                <div class="course-info">
-                    <h1>Relational Databases</h1>
-                    <p>This intensive course provides  an introduction to relational database design concepts and industry standards. Students learn the tools and processes for data modeling in Relational Database Management Systems (RDBMS) in a Windows PC (Microsoft SQL Server) lab environment. They also focus on the Structured Query Language, SQL to define and manipulate data.  </p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Pat McGee</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-4">
-                <img src="images/courses/frontend.png" />
-                <div class="course-info">
-                    <h1>JavaScript </h1>
-                    <p>The JavaScript course focuses on the fundamental concepts of the JavaScript language. This course will empower you with the skills to design client-side, platform-independent solutions that greatly increase the value of your Web site by providing interactivity and interest. You will learn how to use JavaScript to communicate with users, modify the Document Object Model (DOM), control program flow, validate forms, animate images, create cookies, change HTML on the fly, and communicate with databases.</p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Jason Harrison</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-5">
-                <img src="images/courses/java.png" />
-                <div class="course-info">
-                    <h1>Introductory Java Programming</h1>
-                    <p>Taking this course will provide you with a basic foundation in Java syntax, which is the first step towards becoming a successful Java developer. You’ll learn how computers make decisions and how Java keeps track of information through variables and data types. You’ll learn to create conditional statements, functions, and loops to process information and solve problems. You’ll even learn to use IntelliJ, a Java IDE (Integrated Development Environment) that professional developers use, to build, compile, and debug your code. </p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Paul Mills</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-6">
-                <img src="images/courses/angularjs.png" />
-                <div class="course-info">
-                    <h1>Javascript Applications</h1>
-                    <p>Javascript Applications course teaches developers how to use AngularJS to facilitate development of single-page web applications that use the Model-View-Controller (MVC) design pattern. After completing our AngularJS training course you will be able to create solid web applications.</p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Pat McGee</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-7">
-                <img src="images/courses/php_mysql.png" />
-                <div class="course-info">
-                    <h1>PHP / MySQL</h1>
-                    <p>This PHP and MySQL course will provide you with the skills and knowledge necessary to create dynamic database-driven websites using PHP – the fastest-growing scripting language in the world, and MySQL – the world’s most popular open source database. After all, Facebook, Wikipedia and WordPress were all built on PHP and MySQL. </p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Jeff Parker</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-8">
-                <img src="images/courses/aspnet.png" />
-                <div class="course-info">
-                    <h1>ASP.NET</h1>
-                    <p>This is an introductory course on ASP.NET MVC Core 2.0 that will take you from basics all the way to advance mode. This course is for anyone who is new to asp.net core 2.0 or who is familiar with ASP.NET MVC and wants to take a first stab at understanding what is different in asp.net core 2.0. From there we would be building multiple projects to understand all concepts in ASP.NET MVC Core 2.0</p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Pat McGee</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-9">
-                <img src="images/courses/android.png" />
-                <div class="course-info">
-                    <h1>Android Introduction</h1>
-                    <p>This course provides an introduction to developing applications for the Android mobile platform. It is designed to give you a high level overview of Android as a development platform. You will learn the basics of the Android platform, and gain an understanding of the application lifecycle, write simple GUI applications, use built-in widgets and components, work with the database to store data locally. </p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Paul Mills</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-10">
-                <img src="images/courses/security.png" />
-                <div class="course-info">
-                    <h1>Web Application Security</h1>
-                    <p>An introductory course about understanding Web Application Security, its importance and vulnerability in the industry. Web application security involves the security of websites and web applications. The principles of application security is applied primarily to the Internet and Web systems. </p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Pat McGee</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-11">
-                <img src="images/courses/mean.png" />
-                <div class="course-info">
-                    <h1>MEAN (Mongo, ExpressJS, Angular, Node)</h1>
-                    <p>This advanced computer science course will provide an overview of several of the most popular web and mobile app development toolkits, including MongoDB, ExpressJS, AngularJS, and Node.js. Together, these tools are called the “MEAN stack.” In this course, we will introduce the essential concepts of the MEAN stack using a fast-paced, learn-by- doing approach.  </p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Medhat Elmasry</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="course-card-12">
-                <img src="images/courses/ios.png" />
-                <div class="course-info">
-                    <h1>iOS Development</h1>
-                    <p>This 12-week course will introduce you to the basics of iOS app development using Apple's new programming language Swift. During this course students have access to Apple resources for the development and testing of iOS applications. Students will design an application, write code on their own Intel based Mac and run their application on their own iOS device.</p>
-                    <div class="course-instructor-field">
-                        <h3>Instructor:&nbsp;&nbsp;</h3>
-                        <h3>Pat McGee</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">Footer</div>
+         </main>
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="program_overview.html">Program Overview</a>
+                </li>
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="students.html">Students</a>
+                </li>
+                <li>
+                    <a href="calendar.html">Calendar</a>
+                </li>
+                <li>
+                    <a href="staff.html">Staff</a>
+                </li>
+                <li>
+                    <a href="resources.html">Resources</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <h5>Developed With All The Love by</h5>
+            <h6><a href="https://github.com/edgarzapeka/">Edgar Zapeka</a> & <a href="https://github.com/armaandh">Armaan Dhanji</a></h6>
+        </footer>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
