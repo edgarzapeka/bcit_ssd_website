@@ -1,9 +1,7 @@
-/*    --------------------------------------------------
-	:: General
-	-------------------------------------------------- */
   body {
     font-family: 'Roboto', sans-serif;
     color: #353535;
+    background-color: $body-color;
   }
   .content h1 {
     text-align: center;
@@ -17,10 +15,6 @@
     color: inherit;
     font-weight: bold;
   }
-  
-  /*	--------------------------------------------------
-    :: Table Filter
-    -------------------------------------------------- */
   .panel {
     border: 1px solid #ddd;
     background-color: #fcfcfc;

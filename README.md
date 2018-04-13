@@ -8,10 +8,10 @@
 
 Page  | Assigned to | Status
 ------|------- | -------------
-Welcome  | 
-Schedule  | 
+Welcome  | Edhar | Complete
+Schedule  | Armaan | In-Progress
 Students  | Edhar | Complete
-Staff  | Edhar | In-Progress
+Staff  | Edhar | Complete
 Eresourses  | Armaan | Complete
 Program overview  | Armaan | Complete
 Individual(Courses)  | Edhar | Complete

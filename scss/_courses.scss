@@ -144,6 +144,20 @@
     justify-content: space-between;
 }
 
+.card button{
+    color: $emphasis-color;
+}
+
+.card{
+    color: $emphasis-color;
+    background-color: $emhasis-secondary-color;
+}
+
+.card .collapse{
+    background-color: $emphasis-color;
+    color: $emhasis-secondary-color;
+}
+
 @media (max-width: 992px) { 
     .courses-content{
         display: grid;

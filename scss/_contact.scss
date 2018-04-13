@@ -1,0 +1,10 @@
+.container form{
+    margin-top: rem(25);
+    margin-bottom: rem(25);
+}
+
+.container .btn-success{
+    background-color: $emphasis-color;
+    color: black;
+    border-color: $emphasis-color;
+}

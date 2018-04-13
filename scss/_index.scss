@@ -12,24 +12,24 @@
 
 .subtitle-item-1{
     margin-left: rem(20);
-    background-color: aqua;
-    border: 1px solid aqua;
+    background-color: $emphasis-color;
+    border: 1px solid $emphasis-color;
     border-radius: rem(20);
     padding: rem(5);
 }
 
 .subtitle-item-2{
     margin-left: rem(20);
-    background-color: aquamarine;
-    border: 1px solid aquamarine;
+    background-color: $emphasis-color;
+    border: 1px solid $emphasis-color;
     padding: rem(5);
     border-radius: rem(20);
 }
 
 .subtitle-item-3{
     margin-left: rem(20);
-    background-color: azure;
-    border: 1px solid azure;
+    background-color: $emphasis-color;
+    border: 1px solid $emphasis-color;
     padding: rem(5);
     border-radius: rem(20);
 }
@@ -37,6 +37,7 @@
 .introBlock{
     display: flex;
     flex-direction: row;
+    background-color: $emhasis-secondary-color;
 }
 
 .introBlock img{
@@ -51,7 +52,7 @@
 }
 
 .introText h1{
-    color: aquamarine;
+    color: $emphasis-color;
 }
 
 .mainInfo{
@@ -64,10 +65,11 @@
 
 .mainInfo p{
     width: rem(300);
-    padding: rem(25);
+    padding: rem(30);
     border: 1px solid transparent;
-    border-radius: rem(60);
-    background-color: skyblue;
+    border-radius: rem(70);
+    background-color: $emhasis-secondary-color;
+    color: $emphasis-color;
 }
 
 @media (max-width: 780px){
