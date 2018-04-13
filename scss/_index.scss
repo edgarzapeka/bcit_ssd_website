@@ -1,0 +1,96 @@
+.container h1{
+    text-align: center;
+    font-size: rem(30);
+    padding: rem(20);
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.subtitle-item-1{
+    margin-left: rem(20);
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-radius: rem(20);
+    padding: rem(5);
+}
+
+.subtitle-item-2{
+    margin-left: rem(20);
+    background-color: aquamarine;
+    border: 1px solid aquamarine;
+    padding: rem(5);
+    border-radius: rem(20);
+}
+
+.subtitle-item-3{
+    margin-left: rem(20);
+    background-color: azure;
+    border: 1px solid azure;
+    padding: rem(5);
+    border-radius: rem(20);
+}
+
+.introBlock{
+    display: flex;
+    flex-direction: row;
+}
+
+.introBlock img{
+    width: 50%;
+    height: rem(300);
+}
+
+.introBlock .introText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introText h1{
+    color: aquamarine;
+}
+
+.mainInfo{
+    margin-top: rem(20);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mainInfo p{
+    width: rem(300);
+    padding: rem(25);
+    border: 1px solid transparent;
+    border-radius: rem(60);
+    background-color: skyblue;
+}
+
+@media (max-width: 780px){
+    .introBlock{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .introBlock img{
+    width: 100%;
+    height: rem(300);
+    }
+    .subtitle{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .subtitle-item-1{
+        text-align: center;
+    }
+    .subtitle-item-2{
+        text-align: center;
+    }
+    
+    .subtitle-item-3{
+        text-align: center;
+    }
+}
