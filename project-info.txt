@@ -1,0 +1,7 @@
+1) Group Members:
+	Edhar Zapeka
+	Armaan Dhanji
+2) Github URL:
+	https://github.com/edgarzapeka/bcit_ssd_website
+3) Project Installation Instructions:
+	
