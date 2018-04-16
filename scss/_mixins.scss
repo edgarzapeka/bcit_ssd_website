@@ -1,0 +1,169 @@
+// Mixins
+
+// Mixin for centering element
+// with margin-left: auto
+// and margin-right: auto;
+@mixin center($margin-center: true, $zero-margin: true){
+    @if($margin-center){
+        @if($zero-margin){
+            margin: 0 auto;
+        }@else {
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+    }@else {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @if($zero-margin){
+            margin: 0;
+        }
+    }
+}
+
+// Mixin for clearing out
+// margins and padding and
+// setting the line-height to 1 
+// ...useful mainly on typographic elements
+@mixin flatten($list: false) {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    @if($list){
+        list-style: none;
+    }
+}
+
+// Visually hide an element but
+// still make it accessible to 
+// a screen reader
+@mixin visually-hidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+// Clear margins
+@mixin first-last-el-no-margin {
+    > :first-child {
+        margin-top: 0;
+    }
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin first-el-no-margin {
+    > :first-child {
+        margin-top: 0;
+    }
+}
+
+@mixin last-el-no-margin {
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Mixin for setting foreground
+// images to cover their container
+// without distortion of the 
+// image
+// using object-fit cover
+@mixin img-cover($abs-pos: true){
+    @if($abs-pos){
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+// Mixin for having an element
+// sit on top of another and
+// and cover the parent element
+// completely
+@mixin el-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// Mixin to set links
+// to not have their
+// default look
+@mixin plain-link($c: white){
+    text-decoration: none;
+    color: $c;
+}
+
+// Layout Mixins
+
+// Mixins for creating a flex row of
+// and evenly spacing out the
+// elements along the row
+@mixin flex-layout-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+// Center elements in a flex
+// container
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+// Aspect Ratio Boxes Mixin
+// This defaults to a square 
+// aspect ratio
+@mixin aspect-ratio-box($ar) {
+
+    $ratio: 100%;
+
+    @if map_has_key($aspect-ratios, $ar) {
+        $ratio: map_get($aspect-ratios, $ar);
+    } 
+
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 1px;
+        margin-left: -1px;
+        float: left;
+        height: 0;
+        padding-top: $ratio;
+    }
+     
+    &:after { 
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+// Media Query Mixin
+@mixin mq($w){
+    @media (max-width: $w){
+        @content;
+    }
+}

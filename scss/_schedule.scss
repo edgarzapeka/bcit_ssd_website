@@ -1,0 +1,121 @@
+//this is the main container
+
+.calendarView .month {
+    width:85%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.calendarView .monthHead {
+    text-align: center;
+    
+}
+.calendarView .day {
+    border: 2px solid black;
+    font-size:14px;
+    li {
+       padding-right:10px;
+    }
+}
+.calendarView .dayHead {
+    border: 2px solid black;
+    text-align: center;
+    background-color: $brand-highlight;
+}
+
+.listView .month {
+    width:85%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.listView .monthHead {
+    width:85%;
+    margin:auto;
+}
+.listView .day {
+    ul {
+        display:flex;
+        list-style:none;
+    }
+    li {
+        width:25%;
+    }
+    border-top:1px solid black;
+    border-right:1px solid black;
+    border-left:1px solid black;
+
+    @media screen and (max-width:600px) {
+        ul {
+            display:block;
+            list-style:square;
+        }
+        li {
+            width:100%;
+        }
+
+    }
+}
+.listView .day:last-of-type {
+    border-bottom:1px solid black;
+}
+.listView .dayHead {
+    display:none;
+}
+
+#switchViewBtn {
+    position:fixed;
+    right:50px;
+    top:100px;
+    width: 150px;
+    height: 50px;
+    background-color:$brand-highlight;
+    font-family: $body-font;
+    border: 1px $body-bg-color;
+    font-size: 25px;
+
+    // #{$link-hover-selector} {
+    //     background-color: rgba($brand-highlight, 0.7);
+    // }
+}
+
+.hideTab {
+    display:none;
+}
+
+.today {
+    background-color: $brand-highlight;
+}
+
+
+#tabBtn {
+    position:fixed;
+    font-size: 25px;
+
+    right:0;
+    top:100px;
+    width:50px;
+    height:50px;
+    background-color:$brand-highlight;
+    font-family: $body-font;
+    border: 1px $body-bg-color;
+    :focus {
+        outline: 0;
+    }
+    :active {
+        outline:0;
+    }
+}
+
+
+
+//media query
+@media screen and (max-width:800px) {
+    #switchViewBtn {
+        display:none;
+    }
+    #tabBtn {
+        display:none;
+    }
+}
+

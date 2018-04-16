@@ -1,0 +1,18 @@
+// Footer Styles
+footer {
+    padding: $padding;
+    background-color: $brand-emphasize;
+    color: black;
+    text-align: center;
+    border-top: 1px dotted $body-bg-color;
+    p {
+        @include flatten;
+    }
+    a {
+        color:black;
+      
+    }
+    a:hover {
+        color:$brand-color;
+    }
+}

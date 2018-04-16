@@ -1,0 +1,65 @@
+nav {
+    // locally scoped variable
+    $height: 40px;
+    $border: 1px solid white;
+    width:75%;
+    
+    background-color: $brand-highlight;
+    height: $height;
+    border-top: $border;
+
+    ul {
+        @include flatten(true);
+        display: flex;
+        @include mq($phoneLandscape){
+            display: block;
+        }
+    }
+
+    li {
+        flex: 1;
+        width: 20%;
+    }
+
+    a {
+        display: block;
+        color: $text-color-dark;
+        border-right: $border;
+        line-height: $height;
+        text-align: center;
+        font-size: 0.8em;
+        text-decoration: none;
+        outline: none;
+        
+        #{$link-hover-selector} {
+            background-color: rgba(white, 0.3);
+            border-bottom: 3px solid black;
+        }
+
+        @at-root nav li:last-child a {
+            border-right: none;
+        }
+
+    }
+
+    @include mq($phoneLandscape) {
+        display: none;
+        height: auto;
+        border-top: none;
+        width: 100%;
+        .show & {
+            display: block;
+        }
+        li {
+            width: 100%;
+        }
+
+        a {
+            line-height: 50px;
+            border-right: none;
+            border-top: $border;
+        }
+        
+    }
+
+}

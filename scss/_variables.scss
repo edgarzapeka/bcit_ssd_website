@@ -1,0 +1,57 @@
+// Colors
+// Colors
+$brand-color: #ffc168;
+$body-bg-color: #303030;
+$wrapper-bg-color: white;
+// Text Colors
+$text-color-dark: black;
+$text-color-light: white;
+
+//brand colors
+$brand-highlight: #ffc168;
+$brand-emphasize: #878787;
+
+// Use Color functions to brighten and darken colors
+$brand-color-dark: darken($brand-color, 20);
+$brand-color-light: lighten($brand-color, 20);
+
+// Fonts
+$body-font: 'Titillium Web',Georgia, Times, Times New Roman, serif;
+$heading-font: 'Titillium Web',Tahoma, Verdana, Segoe, sans-serif;
+// Typographic Defualts
+$line-height: 1.4;
+
+// Layout variables
+// Spacing
+$space: 30;
+$padding: rem($space);
+$half-padding: rem(($space / 2));
+// Grid Values
+
+// Column Gutter value
+$gutter: 2; // Roughly equivalent to 2%
+
+$one-col: 100%;
+$two-col: colWidth(2);
+$three-col: colWidth(3);
+$four-col: colWidth(4);
+$five-col: colWidth(5);
+$six-col: colWidth(6);
+
+// Media Query Breakpoints
+$desktopMedium: em(1250);
+$tabletLandscape: em(1024);
+$tabletPortrait: em(850);
+$phoneLandscape: em(785);
+$phonePortrait: em(420);
+
+// Utility variables
+$link-hover-selector: '&:hover, &:focus, &:active';
+
+// Aspect Ratios
+$aspect-ratios: (
+    'video': rp(16, 9),
+    'square': rp(1,1),
+    'cinema': rp(21,9),
+    'photo': rp(3,2)
+);

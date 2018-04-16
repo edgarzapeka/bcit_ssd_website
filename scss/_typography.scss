@@ -1,0 +1,9 @@
+// Typography Styles
+body {
+    font-family: $body-font;
+    line-height: $line-height;
+}
+
+h1, h2, h3, nav a, table {
+    font-family: $heading-font;
+}

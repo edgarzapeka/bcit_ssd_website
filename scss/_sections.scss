@@ -1,0 +1,54 @@
+// Info Section styles
+.info {
+    
+    @include first-last-el-no-margin;
+
+    .some-row {
+        @include flex-layout-row;
+        
+        .a-01,
+        .a-02 {
+            @extend %row-item;
+        }
+    
+    }
+
+}
+
+// More Stuff section
+// Just practice @extend
+.more-stuff {
+  
+    background-color: rgba(pink, 0.3);
+    padding: $padding;
+    @include first-last-el-no-margin;
+    
+    .different-row {
+        @include flex-layout-row;
+    }
+
+    .a-03,
+    .a-04,
+    .a-05,
+    .a-06 {
+        @extend %row-item;
+        margin-bottom: 2%;
+        background-color: lightyellow;
+        @at-root .more-stuff .a-05, 
+                 .more-stuff .a-06 {
+            margin-bottom: 0;
+        }
+        // @at-root .more-stuff .a-06 {
+        //     margin-bottom: 0;
+        // }
+
+        @include mq($phoneLandscape){
+            @at-root .more-stuff .a-03,
+                     .more-stuff .a-04,
+                     .more-stuff .a-05 {
+                         margin-bottom: 8%;
+                     }
+        }
+    }
+
+}

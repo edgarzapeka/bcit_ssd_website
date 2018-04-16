@@ -1,0 +1,49 @@
+// Function to
+// Convert Px to Ems
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em; 
+}
+
+// Function to
+// Convert Px to Rems
+@function rem($px, $bc: 16){
+    @return #{$px/$bc}rem; 
+}
+
+// Function to determine column width
+// takes two numerical parameters:
+// $c -> the number of columns in a row
+// $g -> the gutter amount
+@function colWidth($c, $g: $gutter){
+    @return ((100 - $g * ($c - 1)) / $c) * 1%;
+}
+
+// Function to set text-color to
+// a light colour or a dark
+// colour depending on the 
+// provided background color;
+@function contrast-text-color($bgc, $ltc: white, $dtc: black){
+    @if(lightness($bgc) > 50){
+        @return $dtc; // lighter background
+    } @else {
+        @return $ltc; // darker background 
+    }
+}
+
+// Function to generate aspect
+// ratio percentages
+@function rp($w, $h){
+    @return ($h / $w) * 100%;
+}
+
+// Function to get value from
+// a Sass Map
+@function get-map-value($map, $key) {
+    @if map-has-key($map, $key) {
+      @return map-get($map, $key);
+    }
+  
+    @warn "Unknown `#{$key}` in `#{$map}`.";
+    @return null;
+
+}

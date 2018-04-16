@@ -1,0 +1,14 @@
+// Main Styles
+main {
+    padding: $padding;    
+    padding-top: 0;
+    section:not(:first-child) {
+        margin-top: $padding;
+    }
+    a {
+        color:black;
+    }
+    a:hover{
+        color: $brand-color-dark;
+    }
+}

@@ -1,0 +1,30 @@
+// Visually hide an element but
+// still make it accessible to 
+// a screen reader
+%visually-hidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+// A basic two column style
+// that changes to one
+// column at phone widths
+%row-item {
+    width: $two-col;
+    padding: $padding;
+    @include first-last-el-no-margin;
+    border: 1px dotted #ccc;
+    @include mq($phoneLandscape){
+        width: $one-col;
+        margin-bottom: 8%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

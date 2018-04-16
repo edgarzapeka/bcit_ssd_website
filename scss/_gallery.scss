@@ -1,0 +1,47 @@
+// Gallery Styles
+.image-gallery {
+
+    @include flex-layout-row;
+
+    .image-container {
+        width: $three-col;
+        font-family: $heading-font;
+        @include plain-link;
+        @include aspect-ratio-box('video');
+
+        img {
+            @include img-cover;
+        }
+
+        .profile {
+           @include el-cover;
+           @include flex-center;
+           background-color: rgba($body-bg-color, 0.8);
+           transform: scale(0);
+           transition: 0.3s ease;
+
+           .name,
+           .title {
+               @include flatten;
+           }
+
+           .name {
+               margin-bottom: 10px;
+           }
+
+           @at-root .image-container:hover .profile, 
+                    .image-container:focus .profile {
+                        transform: scale(1);
+           } 
+        }
+
+        @include mq($phoneLandscape){
+            width: 100%;
+            margin-bottom: $padding;
+            //@include aspect-ratio-box('square'); 
+            &:before {
+                padding-top: get-map-value($aspect-ratios, 'square');
+            }         
+        }
+    }
+}

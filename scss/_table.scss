@@ -1,0 +1,126 @@
+// Data Table styles 
+.dt {
+    // Data Table Heading Colours
+    $table-caption-color: #dadada;
+    $table-headings-color: darken($table-caption-color, 20);
+
+    // Data Table Column Colours
+    $colour1: $brand-emphasize;//rgba(1, 41, 95, 1);
+    $colour2: white;//rgba(67, 127, 151, 1);
+    $colour3: $brand-color;//rgba(132, 147, 36, 1);
+    // $colour4: rgba(255, 179, 15, 1);
+    // $colour5: rgba(253, 21, 27, 1);
+
+    // Data Table Column Colour List
+    $table-colours-list: $colour1, $colour2, $colour3;//, $colour4, $colour5;
+
+    // Table Border
+    $table-border: 1px solid black;
+
+    // Table Cell padding
+    $cell-padding: 10px;
+
+    // Table Styles
+    font-family: $heading-font;
+    width: $one-col;
+    border: $table-border;
+    
+    th, td {
+        text-align: center;
+        padding: $cell-padding;
+        border: $table-border;
+        width: 33%;
+    }
+
+    caption {
+        background-color: $table-caption-color;
+        padding: $cell-padding;
+        font-size: 1.2em;
+        border-right: $table-border;
+        border-left: $table-border;
+        border-top: $table-border;
+    }
+
+    thead tr,
+    tfoot tr {
+        background-color: $table-headings-color;
+    }
+
+    tbody {
+       
+        tr {
+            @for $i from 1 through length($table-colours-list){
+                td:nth-child(#{$i}){
+                    background-color: nth($table-colours-list, $i);
+                    color: contrast-text-color(nth($table-colours-list, $i));
+                    &:hover {
+                        $bgc: rgba(nth($table-colours-list, $i), 0.6); 
+                        background-color: $bgc;
+                        color: contrast-text-color($bgc);
+                    }
+                }
+            }
+        }
+        tr:first-of-type td {
+            background-color:black;
+            color: white;
+        }
+        tr:first-of-type td:hover {
+            background-color:black;
+            color: white;
+        }
+
+
+    }
+
+    @include mq($phoneLandscape) {
+        tr:first-of-type {
+            display:none;
+        }
+        th, td {
+            text-align: left;
+            width:100%;
+        }
+        
+        tbody {
+            tr {
+                &:nth-child(even){
+                    background-color: white;
+                    
+                }
+                &:nth-child(odd){
+                    background-color: $brand-emphasize;
+                    
+                }
+            }
+            td {
+                display: block;
+                &:before {
+                    //content: attr(data-th) ": ";
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-weight: bold;
+                }
+                @at-root .dt tbody tr td:nth-child(1n){
+                //    background-color: transparent;
+                    color: black;
+                    &:hover {
+                        background-color: rgba(white, 0.5);
+                        color: black;
+                    }
+                }
+                border-top:none;
+                border-bottom:none;
+                &:first-of-type {
+                    border-top:3px solid black;
+                }
+            }    
+        }
+
+        th {
+            display: none;
+        }
+          
+    }
+
+}
