@@ -3,12 +3,16 @@
 @function em($px, $bc: 16){
     @return #{$px/$bc}em; 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ab55d0f858c048f0a2eeba733f65dd32bbe18a50
 // Function to
 // Convert Px to Rems
 @function rem($px, $bc: 16){
     @return #{$px/$bc}rem; 
 }
+<<<<<<< HEAD
 
 // Function to determine column width
 // takes two numerical parameters:
@@ -47,3 +51,5 @@
     @return null;
 
 }
+=======
+>>>>>>> ab55d0f858c048f0a2eeba733f65dd32bbe18a50

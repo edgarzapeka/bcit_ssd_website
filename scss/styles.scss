@@ -1,4 +1,5 @@
 @charset "utf-8";
+<<<<<<< HEAD
 /* CSS Document */
 
 // Imports
@@ -52,3 +53,21 @@
 
 
 
+=======
+
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'nav-main';
+@import 'calendar';
+@import 'body';
+@import 'wrapper';
+@import 'footer';
+@import 'students';
+@import 'courses';
+@import 'staff';
+@import 'program-overview';
+@import 'index';
+@import 'contact';
+@import 'resources';
+>>>>>>> ab55d0f858c048f0a2eeba733f65dd32bbe18a50

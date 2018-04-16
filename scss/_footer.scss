@@ -1,4 +1,5 @@
 // Footer Styles
+<<<<<<< HEAD
 footer {
     padding: $padding;
     background-color: $brand-emphasize;
@@ -15,4 +16,34 @@ footer {
     a:hover {
         color:$brand-color;
     }
+=======
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $emhasis-secondary-color;
+}
+
+.footer a{
+    color: $emphasis-color;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 0;
+    list-style: none;
+    margin-top: rem(30);
+}
+
+@media (max-width: 992px){
+    .footer ul{
+        flex-direction: column;
+    } 
+    .footer ul li{
+        align-self: center;
+    }   
+>>>>>>> ab55d0f858c048f0a2eeba733f65dd32bbe18a50
 }

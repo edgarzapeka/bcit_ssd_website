@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 // Wrapper styles
 .wrapper {
     max-width: 860px;
     min-height: 100vh;
     @include center;
     background-color: $wrapper-bg-color;
+=======
+// Wrapper Styles
+.wrapper {
+    max-width: $site-width;
+    @include center;
+    overflow: hidden;
+    padding: $padding;
+>>>>>>> ab55d0f858c048f0a2eeba733f65dd32bbe18a50
 }

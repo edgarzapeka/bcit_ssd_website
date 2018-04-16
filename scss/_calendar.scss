@@ -1,0 +1,37 @@
+.month {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.week {
+  display: flex;
+  flex-direction: row;
+}
+
+.day {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 1px; /* hack :D */
+  
+  /* margin: 5px; */
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 100px;
+  background-color: navy;
+  color: white;
+  font-size: 20px;
+  overflow: scroll;
+}
+
+.content {
+    padding: 10px;
+}
+
+.block {
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 2px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
